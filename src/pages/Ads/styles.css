@@ -1,1 +1,113 @@
 /* css */
+
+@font-face {
+  font-family: 'Objectivity';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../assets/fonts/Objectivity-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Subjectivity';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../assets/fonts/SubjectivitySerif-Regular.woff2') format('woff2');
+}
+
+body {
+  background: rgb(47, 47, 94);
+}
+
+body, ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+  font-family: Objectivity;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.arrow-nav {
+  margin-left: 12px;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 64px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2A28B7;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin-right: 145px;
+}
+
+#logo {
+  margin-left: 145px;
+}
+
+#serviceContent {
+  display: block;
+  position: absolute;
+  background-image: url(../../assets/images/ServiceDdBox.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 0px;
+  width: 225px;
+  top: 78px;
+  margin-left: -64px;
+  padding-left: 0px;
+  padding-right: 0px;
+  z-index: 1;
+  text-align: center;
+  visibility: hidden;
+  transition: 500ms;
+  overflow-y: hidden;
+}
+
+#menuService {
+  display: block;
+  list-style: none;
+}
+
+#menuService li {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#menuService li:first-child {
+  margin-top: 10px;
+}
+
+#menuService li:last-child {
+  border-bottom: none;
+}
+
+#menuService li #adsBtn {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+
+#serviceDropdown:hover #serviceContent {
+  height: 194px;
+  visibility: visible;
+}
+
+#serviceDropdown:hover .arrow-nav img {
+  transform: rotate(-180deg);
+  transition: 500ms;
+}
