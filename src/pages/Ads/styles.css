@@ -1,5 +1,10 @@
 /* css */
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 @font-face {
   font-family: 'Objectivity';
   font-style: normal;
@@ -8,19 +13,35 @@
 }
 
 @font-face {
-  font-family: 'Subjectivity';
+  font-family: 'Objectivity Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../assets/fonts/Objectivity-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Objectivity Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../assets/fonts/Objectivity-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Subjectivity Serif';
   font-style: normal;
   font-weight: normal;
   src: url('../../assets/fonts/SubjectivitySerif-Regular.woff2') format('woff2');
 }
 
-body {
-  background: rgb(47, 47, 94);
-}
+@font-face {
+  font-family: 'Subjectivity Serif Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../assets/fonts/SubjectivitySerif-Bold.woff2') format('woff2');
+  }
 
-body, ul {
-  margin: 0px;
-  padding: 0px;
+body {
+  background: #FFFFFF;
 }
 
 /* header */
@@ -28,8 +49,7 @@ body, ul {
 #header a {
   color: #FFFFFF;
   text-decoration: none;
-  font-family: Objectivity;
-  font-weight: 700;
+  font-family: Objectivity Bold;
   letter-spacing: 1px;
   font-size: 14px;
 }
@@ -116,22 +136,33 @@ body, ul {
 
 /* main */
 
-#mainSection {
-  position: absolute;
+.mainSections {
+  padding-top: 80px;
+  text-align: center;
   display: block;
   width: 100%;
-  height: 614px;
-  text-align: center;
+}
+
+.farIcons {
+  margin-bottom: 40px;
+}
+
+.closeIcons {
+  margin-bottom: 24px;
+}
+
+.closerIcons {
+  margin-bottom: 16px;
+}
+
+#mainCoverSection {
+  padding-top: 160px;
+  padding-bottom: 120px;
   background-color: #0E0E0E;
   background-image: url(../../assets/images/Cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;  
-}
-
-#speakerIcon {
-  margin-top: 160px;
-  margin-bottom: 40px;
 }
 
 #mainTitle {
@@ -144,9 +175,8 @@ body, ul {
 
 #mainTitle h1 {
   color: #FFFFFF;
-  font-family: Subjectivity;
+  font-family: Subjectivity Serif Bold;
   font-size: 64px;
-  font-weight: 700;
   padding: 0px;
   margin: 0px;
   line-height: 100%;
@@ -164,7 +194,90 @@ body, ul {
   padding: 16px 32px;
   border-radius: 200px;
   text-align: center;
-  font-family: Objectivity;
-  font-weight: 700;
+  font-family: Objectivity Bold;
   cursor: pointer;
+}
+
+.blocks {
+  width: 540px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Subjectivity Serif Bold;
+  font-size: 48px;
+  line-height: 49px;
+}
+
+.subtitle {
+  font-family: Objectivity;
+  font-size: 18px;
+}
+
+.bold {
+  font-family: Objectivity Bold;
+}
+
+#whySection {
+  padding-bottom: 77px;
+}
+
+#whyTitle {
+  margin-bottom: 32px;
+  color: #2A28B7;
+}
+
+#whySubtitle {
+  font-size: 16px;
+  letter-spacing: -0.05em;
+  line-height: 21px;
+  color: #333333;
+}
+
+#howSection {
+  background-color: #2A28B7;
+  padding: 80px 0;
+  color: #FFFFFF;
+}
+
+#howTitle {
+  margin-bottom: 14px;
+  color: #F2F2F2;
+}
+
+#howSubtitle {
+  font-family: Objectivity Light;
+  line-height: 21px;
+  margin-bottom: 40px;
+}
+
+.howBlocks {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.howBlock {
+  padding: 40px 96px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  gap: 64px;
+}
+
+.howBlockTitle {
+  font-family: Objectivity Bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.howBlockSubtitle {
+  font-family: Objectivity Light;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.howArrow {
+  height: 6px;
 }
