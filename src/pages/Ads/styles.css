@@ -139,7 +139,9 @@ body {
 .mainSections {
   padding-top: 80px;
   text-align: center;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -155,6 +157,8 @@ body {
   margin-bottom: 16px;
 }
 
+/* main cover section */
+
 #mainCoverSection {
   padding-top: 160px;
   padding-bottom: 120px;
@@ -166,7 +170,6 @@ body {
 }
 
 #mainTitle {
-  margin: 0 auto;
   width: 540px;
   height: 140px;
   margin-bottom: 40px;
@@ -177,8 +180,6 @@ body {
   color: #FFFFFF;
   font-family: Subjectivity Serif Bold;
   font-size: 64px;
-  padding: 0px;
-  margin: 0px;
   line-height: 100%;
 }
 
@@ -200,7 +201,6 @@ body {
 
 .blocks {
   width: 540px;
-  margin: 0 auto;
 }
 
 .title {
@@ -218,6 +218,8 @@ body {
   font-family: Objectivity Bold;
 }
 
+/* why section */
+
 #whySection {
   padding-bottom: 77px;
 }
@@ -233,6 +235,8 @@ body {
   line-height: 21px;
   color: #333333;
 }
+
+/* how section */
 
 #howSection {
   background-color: #2A28B7;
@@ -280,4 +284,140 @@ body {
 
 .howArrow {
   height: 6px;
+}
+
+/* budget section */
+
+/* .budgetSection {
+
+} */
+
+#budgetTitleBlock {
+  margin-bottom: 58px;
+}
+
+#budgetIcon {
+  height: 64px;
+}
+
+#budgetTitle {
+  color: #2A28B7;
+  margin-bottom: 17px;
+}
+
+#budgetSubtitle {
+  font-family: Objectivity Light;
+  width: 352px;
+  margin: 0 auto;
+  line-height: 21px;
+}
+
+.instantBudgetBlocks {
+  width: 1100px;
+}
+.instantBlock {
+  padding: 64px 0;
+  border: 1px solid #E0E0E0;
+  border-bottom-style: none;
+}
+
+.instantInternalBlock {
+  width: 540px;
+  margin: 0 auto;
+}
+
+.instantStepsNumber {
+  font-family: Subjectivity Serif Bold;
+  font-size: 64px;
+  line-height: 66px;
+  letter-spacing: -0.07em;
+  color: #2A28B7;
+  margin-bottom: 24px;
+}
+
+.instantStepsTitle {
+  font-family: Objectivity;
+  font-size: 40px;
+  line-height: 41px;
+  color: #0E0E0E;
+  margin-bottom: 40px;
+}
+
+.platformsChoices {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.platforms {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Objectivity Bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #2A28B7;
+  letter-spacing: -0.07em;
+
+  padding: 12px 16px;
+  cursor: pointer;  
+  border: 2px solid rgba(42, 40, 183, 0.1);
+  box-sizing: border-box;
+  border-radius: 8px;
+  user-select: none;
+  transition: 300ms;
+}
+
+.uncheckedBox {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 2px solid #2A28B7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-image: none;
+  background-position: center;
+}
+
+/* .platforms:hover {
+  border: 2px solid rgba(42, 40, 183, 0.5);
+} */
+
+.platforms .hide:checked ~ .uncheckedBox{
+  background-image: url(../../assets/icons/CheckmarkIcon.svg);
+}
+
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.toggleYesNo {
+  font-family: Objectivity Bold;
+  font-size: 15px;
+  line-height: 15px;
+  color: #2A28B7;
+
+  padding: 10px 30px;
+
+  border: 2px solid #2A28B7;
+  box-sizing: border-box;
+  border-radius: 200px;
+  cursor: pointer;
+  user-select: none;
+  transition: 300ms;
+}
+
+.toggleYesNo:hover {
+  background-color: rgba(42, 40, 183, 0.1);
+}
+
+.toggleYesNo.active {
+  color: #FFFFFF;
+  background: #2A28B7;
+  cursor: default;
 }
