@@ -182,8 +182,14 @@
             <div class="instantStepsTitle">
               Por <span class="bold">quantos dias</span>?
             </div>
-            <div>
-              google
+            <div class="stepDays">
+              <div class="reduce hover active" id="reduceDays">
+                <img src="../../assets/icons/ReduceDays.svg" alt="Reduce Icon" id="reduceIcon" draggable="false"></img>
+              </div>
+              <span id="days">3</span>
+              <div id="addDays">
+                <img src="../../assets/icons/AddDays.svg" alt="Add Icon" id="addIcon" draggable="false"></img>
+              </div>
             </div>
           </div>
         </div>
@@ -213,9 +219,13 @@
               Suas informações de
               <span class="bold">contato</span>:
             </div>
-            <div class="platformsChoices">
-              <button type="button"></button>
-            </div>
+            <form>
+              <input type="text" class="contactFields">
+              <input type="text" class="contactFields">
+              <input type="text" class="contactFields">
+              <input type="text" class="contactFields">
+              <button type="button">Enviar</button>
+            </form>
           </div>
         </div>
 

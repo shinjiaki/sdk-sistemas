@@ -1,5 +1,8 @@
 const platforms = document.getElementsByClassName('platforms');
 const toggleYesNo = document.getElementsByClassName('toggleYesNo');
+const reduceDays = document.getElementById('reduceDays');
+const addDays = document.getElementById('addDays');
+const days = document.getElementById('days');
 
 for (let i = 0; i < platforms.length; i++) {
   platforms[i].addEventListener("click", () => {
@@ -32,4 +35,41 @@ for (let i = 0; i < toggleYesNo.length; i++) {
       toggleYesNo[0].classList.remove('active')
     }
   });
+}
+
+reduceDays.addEventListener("click", reduceDay);
+addDays.addEventListener("click", addDay);
+
+function addDay() {
+  let currentDays = days.textContent;
+  let intDays = parseInt(currentDays);
+  intDays++;
+  days.textContent = intDays;
+  disableReduceBtn();
+}
+
+function reduceDay() {
+  let currentDays = days.textContent;
+  let intDays = parseInt(currentDays);
+  intDays--;
+  days.textContent = intDays;
+  disableReduceBtn();
+}
+
+disableReduceBtn();
+
+function disableReduceBtn() {
+  let currentDays = days.textContent;
+  let intDays = parseInt(currentDays);
+  if (intDays <= 3) {
+    reduceDays.classList.remove('hover');
+    reduceDays.classList.remove('active');
+    reduceDays.style.setProperty('pointer-events', 'none');
+    reduceDays.style.setProperty('filter', 'opacity(30%) grayscale(1)');
+  } else {
+    reduceDays.classList.add('hover');
+    reduceDays.classList.add('active');
+    reduceDays.style.setProperty('pointer-events', 'all');
+    reduceDays.style.setProperty('filter', 'none');
+  }
 }

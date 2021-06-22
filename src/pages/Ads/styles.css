@@ -381,14 +381,58 @@ body {
   background-position: center;
 }
 
-/* .platforms:hover {
-  border: 2px solid rgba(42, 40, 183, 0.5);
-} */
-
 .platforms .hide:checked ~ .uncheckedBox{
   background-image: url(../../assets/icons/CheckmarkIcon.svg);
 }
 
+.stepDays {
+  display: inline-flex;
+  gap: 22px;
+  border: 2px solid #2A28B7;
+  box-sizing: border-box;
+  border-radius: 26px;
+  padding: 8px 14px;
+  user-select: none;
+}
+
+#addDays, #reduceDays {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+#reduceDays {
+  pointer-events: none;
+}
+
+#addDays:hover, .reduce.hover:hover{
+  background-color: rgba(42, 40, 183, 0.1);
+}
+
+#addDays:active, .reduce.active:active{
+  background-color: rgba(42, 40, 183, 0.5);
+  transition: 100ms;
+}
+
+#days {
+  font-family: Objectivity Bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #2A28B7;
+  transform: translateY(6px);
+}
+
+#addIcon {
+  position: relative;
+  transform: translate(0%, 30%);
+  }
+
+#reduceIcon {
+  position: relative;
+  transform: translate(0%, -80%);
+}
 
 .toggle {
   display: flex;
