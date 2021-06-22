@@ -3,6 +3,8 @@ const toggleYesNo = document.getElementsByClassName('toggleYesNo');
 const reduceDays = document.getElementById('reduceDays');
 const addDays = document.getElementById('addDays');
 const days = document.getElementById('days');
+const inputPhone = document.getElementById('inputPhone');
+const contactFields = document.getElementsByClassName('contactFields');
 
 for (let i = 0; i < platforms.length; i++) {
   platforms[i].addEventListener("click", () => {
@@ -71,5 +73,31 @@ function disableReduceBtn() {
     reduceDays.classList.add('active');
     reduceDays.style.setProperty('pointer-events', 'all');
     reduceDays.style.setProperty('filter', 'none');
+  }
+}
+
+inputPhone.addEventListener('keypress', formatPhone);
+
+function formatPhone() {
+  const length = inputPhone.value.length;
+  const currentValue = inputPhone.value;
+
+  if (length == 1) {
+    inputPhone.value = '(' + currentValue;
+  }
+  if (length == 3) {
+    inputPhone.value = currentValue + ') ';
+  }
+  if (length == 6) {
+    inputPhone.value = currentValue + ' ';
+  }
+  if (length == 11) {
+    inputPhone.value = currentValue + '-';
+  }
+}
+
+function submitVerification() {
+  for (let i = 0; i < contactFields.length; i++) {
+    contactFields[i].classList.add('invalid');
   }
 }

@@ -219,12 +219,20 @@
               Suas informações de
               <span class="bold">contato</span>:
             </div>
-            <form>
-              <input type="text" class="contactFields">
-              <input type="text" class="contactFields">
-              <input type="text" class="contactFields">
-              <input type="text" class="contactFields">
-              <button type="button">Enviar</button>
+            <form class="contactForm">
+              <input type="text" class="contactFields" placeholder="Nome completo" required>
+              <input 
+                type="text" 
+                class="contactFields" 
+                placeholder="(21) 9 7009-4007" 
+                id="inputPhone" 
+                minlength="15" 
+                maxlength="16" 
+                required
+              >
+              <input type="email" class="contactFields" placeholder="E-mail" required>
+              <input type="text" class="contactFields" placeholder="Área de atuação *" required>
+              <button type="submit" onclick="submitVerification()">Enviar</button>
             </form>
           </div>
         </div>

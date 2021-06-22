@@ -465,3 +465,46 @@ body {
   background: #2A28B7;
   cursor: default;
 }
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.contactFields {
+  width: 350px;
+  height: 50px;
+  border: 2px solid #333333;
+  box-sizing: border-box;
+  border-radius: 200px;
+  padding: 16px 24px;
+  font-family: Objectivity;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 60px;
+  outline: 0;
+  transition: 300ms;
+}
+
+.contactFields::placeholder {
+  color: #BDBDBD;
+  opacity: 1;
+  transition: 300ms;
+  line-height: 60px;
+}
+
+.contactFields:focus::placeholder {
+  color: rgba(42, 40, 183, 0.3);
+  opacity: 1;
+}
+
+.contactFields:focus {
+  border: 2px solid #2A28B7;
+  color: #2A28B7;
+}
+
+.contactFields.invalid:invalid {
+  border: 2px solid red;
+}
