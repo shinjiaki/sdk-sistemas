@@ -222,24 +222,29 @@
             <form class="contactForm">
               <input type="text" class="contactFields" placeholder="Nome completo" required>
               <input 
-                type="text" 
+                type="tel" 
                 class="contactFields" 
                 placeholder="(21) 9 7009-4007" 
-                id="inputPhone" 
+                id="inputPhone"
+                pattern="(?:^\([0-9]{2}\)\s[0-9]{1}\s[0-9]{4}-[0-9]{4})"
+                title="Exemplo: (21) 9 7009-4007"
                 minlength="15" 
                 maxlength="16" 
                 required
               >
               <input type="email" class="contactFields" placeholder="E-mail" required>
               <input type="text" class="contactFields" placeholder="Área de atuação *" required>
-              <button type="submit" onclick="submitVerification()">Enviar</button>
+              <button type="submit" onclick="submitVerification()" id="generateBudgetBtn">
+                <img src="../../assets/icons/FlashIcon.svg" alt="Flash Icon">
+                Gerar Orçamento
+                <img src="../../assets/icons/FlashIcon.svg" alt="Flash Icon">
+              </button>
             </form>
           </div>
         </div>
 
-        <div class="instantBlock">
-          hi
-        </div>
+        <div id="lastInstantBlock"></div>
+
       </div>
     </section>
 

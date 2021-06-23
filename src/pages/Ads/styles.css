@@ -136,6 +136,8 @@ body {
 
 /* main */
 
+/* main section */
+
 .mainSections {
   padding-top: 80px;
   text-align: center;
@@ -343,6 +345,8 @@ body {
   margin-bottom: 40px;
 }
 
+/* budget step 1 */
+
 .platformsChoices {
   display: flex;
   justify-content: center;
@@ -384,6 +388,8 @@ body {
 .platforms .hide:checked ~ .uncheckedBox{
   background-image: url(../../assets/icons/CheckmarkIcon.svg);
 }
+
+/* budget step 2 */
 
 .stepDays {
   display: inline-flex;
@@ -434,6 +440,8 @@ body {
   transform: translate(0%, -80%);
 }
 
+/* budget step 3 */
+
 .toggle {
   display: flex;
   justify-content: center;
@@ -465,6 +473,8 @@ body {
   background: #2A28B7;
   cursor: default;
 }
+
+/* budget step 4 */
 
 .contactForm {
   display: flex;
@@ -507,4 +517,35 @@ body {
 
 .contactFields.invalid:invalid {
   border: 2px solid red;
+  color: red;
+}
+
+.contactFields.invalid:invalid::placeholder {
+  color: rgba(255, 0, 0, 0.3);
+  opacity: 1;
+}
+
+/* budget generate button */
+
+#generateBudgetBtn {
+  position: absolute;
+  border: none;
+  border-radius: 200px;
+  display: flex;
+  gap: 8px;
+  padding: 16px 32px;
+  background-color: #2A28B7;
+  font-family: 'Objectivity Bold';
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 16px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transform: translateY(400px);
+}
+
+#lastInstantBlock {
+  height: 176px;
+  border: 1px solid #E0E0E0;
+  border-bottom-style: none;
 }
