@@ -5,6 +5,9 @@ const addDays = document.getElementById('addDays');
 const days = document.getElementById('days');
 const inputPhone = document.getElementById('inputPhone');
 const contactFields = document.getElementsByClassName('contactFields');
+const modal = document.getElementById('budgetModal')
+const openModal = document.getElementById('generateBudgetBtn')
+const closeModal = document.getElementById('closeModal')
 
 for (let i = 0; i < platforms.length; i++) {
   platforms[i].addEventListener("click", () => {
@@ -100,4 +103,20 @@ function submitVerification() {
   for (let i = 0; i < contactFields.length; i++) {
     contactFields[i].classList.add('invalid');
   }
+}
+
+openModal.onclick = () => {
+  submitVerification()
+  const nameField = contactFields[0].checkValidity();
+  const emailField = contactFields[1].checkValidity();
+  const phoneField = contactFields[2].checkValidity();
+  const occupationField = contactFields[3].checkValidity();
+  
+  if (nameField && emailField && phoneField && occupationField) {
+    modal.style.display = "flex";
+  }
+}
+
+closeModal.onclick = () => {
+  modal.style.display = "none";
 }

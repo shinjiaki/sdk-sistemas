@@ -41,7 +41,7 @@
         <div id="mainTitle">
           <h1>Gestão de Anúncios</h1>
         </div>
-        <button id="instantBudgetBtn" onclick="window.location.href='#'">
+        <button id="instantBudgetBtn" onclick="window.location.href='#budgetTitleBlock'">
           <span>
             <img id="flashIcon" src="../../assets/icons/FlashIcon.svg" alt="FlashIcon">
           </span>ORÇAMENTO INSTANTÂNEO
@@ -234,7 +234,7 @@
               >
               <input type="email" class="contactFields" placeholder="E-mail" required>
               <input type="text" class="contactFields" placeholder="Área de atuação *" required>
-              <button type="submit" onclick="submitVerification()" id="generateBudgetBtn">
+              <button type="button" id="generateBudgetBtn">
                 <img src="../../assets/icons/FlashIcon.svg" alt="Flash Icon">
                 Gerar Orçamento
                 <img src="../../assets/icons/FlashIcon.svg" alt="Flash Icon">
@@ -248,6 +248,65 @@
       </div>
     </section>
 
+    <div class="modal" id="budgetModal">
+
+      <div class="modalContent">
+        <div class="modalHeader">
+          <div class="modalTitle">Orçamento</div>
+          <div id="closeModal">
+            <img src="../../assets/icons/CloseModalIcon.svg" alt="Close Modal Icon" id="closeModalIcon">
+          </div>
+        </div>
+        <div class="campaingDetails">
+          <div class="campaingTitles" id="campaingTitleService">Serviço</div>
+          <div class="campaingText" id="campaingTextService">Gestão de anúncios</div>
+
+          <div class="campaingTitles" id="campaingTitleDetails">Detalhes da campanha</div>
+          <div class="campaingChoiceDetails">
+            <div class="platformDetails">
+              <div class="campaingText">Plataforma(s):</div>
+              <div id="campaingPlatformChoices">
+                <div class="campaingChoiceIcons">Facebook</div>
+                <div class="campaingChoiceIcons">Instagram</div>
+                <div class="campaingChoiceIcons">Google</div>
+              </div>
+            </div>
+            <div class="periodDetails">
+              <div class="campaingText">Período:</div>
+              <div class="campaingChoiceIcons">3 dias</div>
+            </div>
+            <div class="artDetails">
+              <div class="campaingText">Artes inclusas:</div>
+              <div class="campaingChoiceIcons">Sim</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="campaingPriceAndContact">
+          <div class="campaingPrice">
+            <div class="campaingPriceTitle">Valor</div>
+            <div id="campaingPriceValue">R$ 1.234,56</div>
+            <div class="campaingPriceWarning">Saldo para veiculação dos <br>anúncios não incluso *</div>
+          </div>
+          <div class="modalContact">
+            <a href="#modalPhoneBtn" class="contactButtons" id="modalPhoneBtn">
+              <img src="../../assets/icons/PhoneIcon.svg" alt="Email Icon" id="modalPhoneIcon">
+              Ligar Agora
+            </a>
+            <a href="https://api.whatsapp.com/" target="_blank" class="contactButtons" id="modalWhatsappBtn">
+              <img src="../../assets/icons/WhatsAppIcon.svg" alt="WhatsApp Icon" id="whatsappIcon">
+              Falar pelo WhatsApp
+            </a>
+            <a href="#modalEmailBtn" class="contactButtons" id="modalEmailBtn">
+              <img src="../../assets/icons/EmailIcon.svg" alt="Email Icon" id="emailIcon">
+              gestao@expcompany.com.br
+            </a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
     <section class="mainSections" id="contactSection">
       <div class="blocks">
         <img src="../../assets/icons/ContactIcon.svg" alt="ContactIcon" class="closeIcons" id="contactIcon">
@@ -258,8 +317,8 @@
           Fale conosco pelo nosso WhatsApp<br>ou nos envie um email.
         </div>
         <div class="contactButtonsBox">
-          <a href="#whatsappBtn" class="contactButtons" id="whatsappBtn">
-            <img src="../../assets/icons/WhatsAppIcon.svg" alt="WhatsApp Icon" id="whatsappIcon">
+          <a href="https://api.whatsapp.com/" target="_blank" class="contactButtons">
+            <img src="../../assets/icons/WhatsAppIcon.svg" alt="WhatsApp Icon">
             WhatsApp
           </a>
           <a href="#emailBtn" class="contactButtons" id="emailBtn">
@@ -311,14 +370,16 @@
           id="socialExpCompanyIcon"
         >
         <div class="socialMedias">
-          <img src="../../assets/icons/FacebookIcon.svg" alt="Facebook Icon">
-          <img src="../../assets/icons/InstagramIcon.svg" alt="Instagram Icon">
-          <img src="../../assets/icons/LinkedinIcon.svg" alt="Linkedin Icon">
+          <img src="../../assets/icons/FacebookIcon.svg" alt="Facebook Icon" style="cursor: pointer;">
+          <img src="../../assets/icons/InstagramIcon.svg" alt="Instagram Icon" style="cursor: pointer;">
+          <img src="../../assets/icons/LinkedinIcon.svg" alt="Linkedin Icon" style="cursor: pointer;">
         </div>
       </div>
     </section>
-
   </main>
+  <footer class="footer">
+    <div class="footerTitle">EXPCOMPANY © 2018 - 2021</div>
+  </footer>
   
   <script src="./index.js"></script>
 </body>
