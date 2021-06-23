@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Gestão de Anúncios</title>
+</head>
+<body>
+  <header id="header">
+    <a id="logo" href="#"><img src="../../assets/icons/ExpCompany.svg" alt="logo"></a>
+
+    <nav id="nav">
+      <ul id="menu">
+        <li><a href="#">Página inicial</a></li>
+        <li><a href="#">Quem somos</a></li>
+        <div id="serviceDropdown">
+          <li>
+            <a href="#">Serviços
+              <span class="arrow-nav"><img src="../../assets/icons/arrow.svg" alt="arrow"></span>
+            </a>
+          </li>
+          <div id="serviceContent">
+            <ul id="menuService">
+              <li><a href="#">Artes para Redes Sociais</a></li>
+              <li><a id="adsBtn" href="#">Gestão de Anúncios</a></li>
+              <li><a href="#">Registro de Marca</a></li>
+            </ul>
+          </div>
+        </div>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="mainSections" id="mainCoverSection">
+      <div class="blocks">
+        <img id="speakerIcon" src="../../assets/icons/SpeakerIcon.svg" alt="Speaker" class="farIcons">
+        <div id="mainTitle">
+          <h1>Gestão de Anúncios</h1>
+        </div>
+        <button id="instantBudgetBtn" onclick="window.location.href='#budgetTitleBlock'">
+          <span>
+            <img id="flashIcon" src="../../assets/icons/FlashIcon.svg" alt="FlashIcon">
+          </span>ORÇAMENTO INSTANTÂNEO
+        </button>
+      </div>
+
+    </section>
+    <section class="mainSections" id="whySection">
+      <div class="blocks">
+        <img src="../../assets/icons/WhyIcon.svg" alt="WhyIcon" class="farIcons" id="whyIcon">
+        <div class="title" id="whyTitle">
+          Por que investir em anúncios conosco?
+        </div>
+        <div class="subtitle" id="whySubtitle">
+          Você já tem o produto/serviço ideal e <span class="bold">quer mostrar ao público</span>? Através 
+          da nossa gestão de anúncios, tornamos seu negócio <span class="bold">conhecido</span>, 
+          gerando leads qualificados, tráfego no seu site/perfil e, 
+          consequentemente, <span class="bold">mais receita</span>.
+        </div>
+      </div>
+    </section>
+
+    <section class="mainSections" id="howSection">
+      <div class="blocks">
+        <img src="../../assets/icons/HowIcon.svg" alt="HowIcon" class="farIcons" id="howIcon">
+        <div class="title" id="howTitle">
+          Como trabalhamos
+        </div>
+        <div class="subtitle" id="howSubtitle">
+          Nosso processo de trabalho
+        </div>
+
+        <div class="howBlocks">
+          <div class="howBlock">
+            <img src="../../assets/icons/Step1Icon.svg" alt="Step 1" class="closerIcons">
+            <div class="howBlockTitle">
+              Definição de público alvo
+            </div>
+            <div class="howBlockSubtitle">
+              Através de uma curta reunião, definimos seu público alvo.
+            </div>
+          </div>
+          <img src="../../assets/icons/HowArrow.svg" alt="How Arrow" class="howArrow">
+
+          <div class="howBlock">
+            <img src="../../assets/icons/Step2Icon.svg" alt="Step 2" class="closerIcons">
+            <div class="howBlockTitle">
+              Desenvolvimento de Estratégia
+            </div>
+            <div class="howBlockSubtitle">
+              Traçamos a estratégia ideal para o seu objetivo.
+            </div>
+          </div>
+          <img src="../../assets/icons/HowArrow.svg" alt="How Arrow" class="howArrow">
+
+          <div class="howBlock">
+            <img src="../../assets/icons/Step3Icon.svg" alt="Step 3" class="closerIcons">
+            <div class="howBlockTitle">
+              No ar
+            </div>
+            <div class="howBlockSubtitle">
+              Começamos a veicular seus anúncios dentro do perfil que definimos
+            </div>
+          </div>
+          <img src="../../assets/icons/HowArrow.svg" alt="How Arrow" class="howArrow">
+
+          <div class="howBlock">
+            <img src="../../assets/icons/Step4Icon.svg" alt="Step 4" class="closerIcons">
+            <div class="howBlockTitle">
+              Acompanhamento
+            </div>
+            <div class="howBlockSubtitle">
+              Cuidamos de perto! Realizamos acompanhamento diário para fazer os ajustes necessários.
+            </div>
+          </div>
+          <img src="../../assets/icons/HowArrow.svg" alt="How Arrow" class="howArrow">
+
+          <div class="howBlock">
+            <img src="../../assets/icons/Step5Icon.svg" alt="Step 5" class="closerIcons">
+            <div class="howBlockTitle">
+              Leads!
+            </div>
+            <div class="howBlockSubtitle">
+              Seus leads começam a aparecer :)
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+    <section class="mainSections" id="budgetSection">
+      <div class="blocks" id="budgetTitleBlock">
+        <img src="../../assets/icons/BudgetIcon.svg" alt="Budget Icon" class="closeIcons" id="budgetIcon">
+        <div class="title" id="budgetTitle">
+          Faça um orçamento instantâneo
+        </div>
+        <div class="subtitle" id="budgetSubtitle">
+          Tenha acesso ao seu orçamento 
+          <span class="bold">instantaneamente</span> em apenas 4 
+          passos!
+        </div>
+      </div>
+      
+      <div class="instantBudgetBlocks">
+        <div class="instantBlock">
+          <div class="instantInternalBlock">
+            <div class="instantStepsNumber">
+              1
+            </div>
+            <div class="instantStepsTitle">
+              <span class="bold">Para quais plataformas </span>
+              você deseja anunciar?
+            </div>
+            <div class="platformsChoices">
+              <label for="googlePlatform" class="platforms">Google Ads
+                <input type="checkbox" class="hide" id="googlePlatform" hidden>
+                <div class="uncheckedBox"></div>
+              </label>
+
+              <label for="instagramPlatform" class="platforms">Instagram
+                <input type="checkbox" class="hide" id="instagramPlatform" hidden>
+                <div class="uncheckedBox"></div>
+              </label>
+
+              <label for="facebookPlatform" class="platforms">Facebook
+                <input type="checkbox" class="hide" id="facebookPlatform" hidden>
+                <div class="uncheckedBox"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="instantBlock">
+          <div class="instantInternalBlock">
+            <div class="instantStepsNumber">
+              2
+            </div>
+            <div class="instantStepsTitle">
+              Por <span class="bold">quantos dias</span>?
+            </div>
+            <div class="stepDays">
+              <div class="reduce hover active" id="reduceDays">
+                <img src="../../assets/icons/ReduceDays.svg" alt="Reduce Icon" id="reduceIcon" draggable="false"></img>
+              </div>
+              <span id="days">3</span>
+              <div id="addDays">
+                <img src="../../assets/icons/AddDays.svg" alt="Add Icon" id="addIcon" draggable="false"></img>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="instantBlock">
+          <div class="instantInternalBlock">
+            <div class="instantStepsNumber">
+              3
+            </div>
+            <div class="instantStepsTitle">
+              Já <span class="bold">possui as artes </span>para 
+              os anúncios?
+            </div>
+            <div class="toggle">
+              <div class="toggleYesNo active">Sim</div>
+              <div class="toggleYesNo">Não</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="instantBlock">
+          <div class="instantInternalBlock">
+            <div class="instantStepsNumber">
+              4
+            </div>
+            <div class="instantStepsTitle">
+              Suas informações de
+              <span class="bold">contato</span>:
+            </div>
+            <form class="contactForm">
+              <input type="text" class="contactFields" placeholder="Nome completo" required>
+              <input 
+                type="tel" 
+                class="contactFields" 
+                placeholder="(21) 9 7009-4007" 
+                id="inputPhone"
+                pattern="(?:^\([0-9]{2}\)\s[0-9]{1}\s[0-9]{4}-[0-9]{4})"
+                title="Exemplo: (21) 9 7009-4007"
+                minlength="15" 
+                maxlength="16" 
+                required
+              >
+              <input type="email" class="contactFields" placeholder="E-mail" required>
+              <input type="text" class="contactFields" placeholder="Área de atuação *" required>
+              <button type="button" id="generateBudgetBtn">
+                <img src="../../assets/icons/FlashIcon.svg" alt="Flash Icon">
+                Gerar Orçamento
+                <img src="../../assets/icons/FlashIcon.svg" alt="Flash Icon">
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div id="lastInstantBlock"></div>
+
+      </div>
+    </section>
+
+    <div class="modal" id="budgetModal">
+
+      <div class="modalContent">
+        <div class="modalHeader">
+          <div class="modalTitle">Orçamento</div>
+          <div id="closeModal">
+            <img src="../../assets/icons/CloseModalIcon.svg" alt="Close Modal Icon" id="closeModalIcon">
+          </div>
+        </div>
+        <div class="campaingDetails">
+          <div class="campaingTitles" id="campaingTitleService">Serviço</div>
+          <div class="campaingText" id="campaingTextService">Gestão de anúncios</div>
+
+          <div class="campaingTitles" id="campaingTitleDetails">Detalhes da campanha</div>
+          <div class="campaingChoiceDetails">
+            <div class="platformDetails">
+              <div class="campaingText">Plataforma(s):</div>
+              <div id="campaingPlatformChoices">
+                <div class="campaingChoiceIcons">Facebook</div>
+                <div class="campaingChoiceIcons">Instagram</div>
+                <div class="campaingChoiceIcons">Google</div>
+              </div>
+            </div>
+            <div class="periodDetails">
+              <div class="campaingText">Período:</div>
+              <div class="campaingChoiceIcons">3 dias</div>
+            </div>
+            <div class="artDetails">
+              <div class="campaingText">Artes inclusas:</div>
+              <div class="campaingChoiceIcons">Sim</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="campaingPriceAndContact">
+          <div class="campaingPrice">
+            <div class="campaingPriceTitle">Valor</div>
+            <div id="campaingPriceValue">R$ 1.234,56</div>
+            <div class="campaingPriceWarning">Saldo para veiculação dos <br>anúncios não incluso *</div>
+          </div>
+          <div class="modalContact">
+            <a href="#modalPhoneBtn" class="contactButtons" id="modalPhoneBtn">
+              <img src="../../assets/icons/PhoneIcon.svg" alt="Email Icon" id="modalPhoneIcon">
+              Ligar Agora
+            </a>
+            <a href="https://api.whatsapp.com/" target="_blank" class="contactButtons" id="modalWhatsappBtn">
+              <img src="../../assets/icons/WhatsAppIcon.svg" alt="WhatsApp Icon" id="whatsappIcon">
+              Falar pelo WhatsApp
+            </a>
+            <a href="#modalEmailBtn" class="contactButtons" id="modalEmailBtn">
+              <img src="../../assets/icons/EmailIcon.svg" alt="Email Icon" id="emailIcon">
+              gestao@expcompany.com.br
+            </a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+    <section class="mainSections" id="contactSection">
+      <div class="blocks">
+        <img src="../../assets/icons/ContactIcon.svg" alt="ContactIcon" class="closeIcons" id="contactIcon">
+        <div class="title" id="contactTitle">
+          Entre em contato
+        </div>
+        <div class="subtitle" id="contactSubtitle">
+          Fale conosco pelo nosso WhatsApp<br>ou nos envie um email.
+        </div>
+        <div class="contactButtonsBox">
+          <a href="https://api.whatsapp.com/" target="_blank" class="contactButtons">
+            <img src="../../assets/icons/WhatsAppIcon.svg" alt="WhatsApp Icon">
+            WhatsApp
+          </a>
+          <a href="#emailBtn" class="contactButtons" id="emailBtn">
+            <img src="../../assets/icons/EmailIcon.svg" alt="Email Icon" id="emailIcon">
+            gestao@expcompany.com.br
+          </a>
+        </div>
+      </div>
+
+      <div id="contactBoxes">
+        <div id="contactAdress">
+          <div class="blocks">
+            <img src="../../assets/icons/AddressIcon.svg" alt="Address Icon" class="closeIcons">
+            <div class="title" id="addressTitle">
+              Endereço
+            </div>
+            <div class="subtitle" id="addressSubtitle">
+              Av. Pres. Wilson, 165 - 5º andar - Sala 9<br>
+              Centro - Rio de Janeiro - RJ
+            </div>
+          </div>
+        </div>
+        <div id="contactPhones">
+          <div class="contactPhone">
+            <img src="../../assets/icons/PhoneIcon.svg" alt="Phone Icon" class="closerIcons">
+            <div class="contactPhoneSector">Setor de Criação</div>
+            <div class="contactPhoneNumber">+55 21  97009-4007</div>
+          </div>
+          <div class="contactPhone">
+            <img src="../../assets/icons/PhoneIcon.svg" alt="Phone Icon" class="closerIcons">
+            <div class="contactPhoneSector">Setor Comercial</div>
+            <div class="contactPhoneNumber">+55 21 96818-2012</div>
+          </div>
+          <div class="contactPhone">
+            <img src="../../assets/icons/PhoneIcon.svg" alt="Phone Icon" class="closerIcons">
+            <div class="contactPhoneSector">Setor Financeiro</div>
+            <div class="contactPhoneNumber">+55 21 97184-9769</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mainSections" id="socialSection">
+      <div class="blocks">
+        <img 
+          src="../../assets/icons/SocialLogoExpCompany.svg" 
+          alt="Exp Company" 
+          class="closeIcons" 
+          id="socialExpCompanyIcon"
+        >
+        <div class="socialMedias">
+          <img src="../../assets/icons/FacebookIcon.svg" alt="Facebook Icon" style="cursor: pointer;">
+          <img src="../../assets/icons/InstagramIcon.svg" alt="Instagram Icon" style="cursor: pointer;">
+          <img src="../../assets/icons/LinkedinIcon.svg" alt="Linkedin Icon" style="cursor: pointer;">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footerTitle">EXPCOMPANY © 2018 - 2021</div>
+  </footer>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
