@@ -290,10 +290,6 @@ body {
 
 /* budget section */
 
-/* .budgetSection {
-
-} */
-
 #budgetTitleBlock {
   margin-bottom: 58px;
 }
@@ -548,4 +544,117 @@ body {
   height: 176px;
   border: 1px solid #E0E0E0;
   border-bottom-style: none;
+}
+
+/* contact section */
+
+#contactSection {
+  background-color: #0E0E0E;
+  color: #FFFFFF;
+}
+
+#contactTitle {
+  margin-bottom: 3px;
+}
+
+#contactSubtitle {
+  width: 350px;
+  margin: 0 auto;
+  font-family: Objectivity Light;
+  line-height: 21px;
+  margin-bottom: 60px;
+}
+
+.contactButtonsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.contactButtons {
+  background-color: #2A28B7;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border-radius: 200px;
+  color: #FFFFFF;
+  font-family: Objectivity Bold;
+  font-size: 15px;
+  line-height: 11px;  
+  text-decoration: none;
+}
+
+#emailBtn {
+  display: flex;
+}
+
+#emailIcon {
+  margin-right: 8px
+}
+
+/* address contact */
+
+#contactBoxes {
+  width: 1100px;
+  border: 1px solid #333333;
+  border-bottom: none;
+}
+
+#contactAdress {
+  display: flex;
+  justify-content: center;
+  padding-top: 64px;
+  border-bottom: 1px solid #333333;
+}
+
+#addressTitle {
+  font-size: 36px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+#addressSubtitle {
+  margin-bottom: 64px;
+}
+
+#contactPhones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactPhone {
+  color: #828282;
+  padding: 64px 0px;
+}
+
+.contactPhone:nth-of-type(2) {
+  padding: 64px 128px;
+  border-left: 1px solid #333333;
+  border-right: 1px solid #333333;
+}
+
+.contactPhoneSector {
+  font-family: Objectivity;
+  font-size: 12px;
+  line-height: 9px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.contactPhoneNumber {
+  font-family: Objectivity;
+  font-size: 12px;
+  line-height: 9px;
+}
+
+/* social medias section */
+
+#socialSection {
+  padding: 80px 0;
+}
+
+.socialMedias {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
